@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
+
+.card-body {
+  height: 20vh;
+  text-align: left;
+}
+
+.card-text-div {
+  padding-bottom: 20px;
+}
+
+.title {
+  padding-bottom: 3vh;
+}
+
+.subtitle {
+  padding-bottom: 3vh;
+}
+
+.form-control {
+  width: 30vw;
+}
+
+.message {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+}

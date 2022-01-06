@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title%}Fuck Home{% endblock %} {% block
+content %}
+<br />
+<h1 align="center" class="title">life</h1>
+<h4 class="subtitle">Sometimes people get pessimistic but in a good way</h4>
+{% if message %}
+
+<h2 align="center" class="message">{{message}}</h2>
+<br />
+{% endif %}
+<form method="POST">
+  <div class="form-group">
+    <label for="text">From</label>
+    <input
+      type="text"
+      class="form-control"
+      id="from"
+      name="from"
+      placeholder="enter appropriate name"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Show me the expression</button>
+  <br />
+  <br />
+  <a class="refresh" id="refresh" href="/life">refresh the page</a>
+</form>
+{% endblock %}

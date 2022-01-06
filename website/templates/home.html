@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title%}Fuck Home{% endblock %} {% block
+content %}
+<br />
+<h1 align="center">Proper ways to use fucks</h1>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      {% for way in ways %}
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body" hight="400px">
+            <h3>
+              <a class="type" href="{{ url_for('views.' + way['type']) }}"
+                >{{way["type"]}}</a
+              >
+            </h3>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <div class="card-text-div">
+              <p class="card-text">{{way["message"]}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
